@@ -71,17 +71,6 @@ def generate(prompt,ip,lang):
             st.error("Oops!🤨 It seems like the provided API Key is invalid")
             st.info("Please enter a valid API Key. 😉")
 
-        elif "response.parts" in error_msg:
-            st.error("⚠️ There was an issue processing your request due to a quick accessor problem.🫠")
-            st.error("This might 🤔 be related to the Gemini, not 🥴 returning any candidates.")
-            st.error("🔍 Check the response.prompt_feedback to see if the prompt was blocked.😶‍🌫️")
-            
-        elif "504 Deadline Exceeded" in error_msg:
-            st.error("😵 We're experiencing high traffic at the moment🚦")
-            st.info("Please try again after some time. 🕰️")       
-        else:
-            st.error("💀 There was an issue processing your request 😪")
-            st.error(f"The reason 👉🏻 {error_msg}☠️")
  
 if(req_type=="Story" or req_type=="Essay"):
     with st.form("myform"):
