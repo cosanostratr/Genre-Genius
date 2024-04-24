@@ -38,7 +38,7 @@ with st.sidebar:
         'Choose the tone of Essay',essay_tone)
          
     default_lang="English"
-    languages = ["Arabic","Bengali","English","French","German","Hindi","Indonesian","Italian","Japanese","Korean","Mandarin Chinese","Portuguese","Russian","Spanish","Swahili"]
+    languages = ["Turkish","Bengali","English","French","German","Hindi","Indonesian","Italian","Japanese","Korean","Mandarin Chinese","Portuguese","Russian","Spanish","Swahili"]
     lang= st.selectbox('Choose the language',languages, index=languages.index(default_lang) if default_lang in languages else 0)     
     
     st.markdown("[Source Code](https://github.com/Sgvkamalakar/Genre-Genius)")
